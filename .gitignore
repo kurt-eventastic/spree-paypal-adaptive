@@ -10,3 +10,4 @@ pkg
 spec/dummy
 .rvmrc
 .idea
+*.gem
