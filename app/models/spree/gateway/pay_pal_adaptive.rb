@@ -35,6 +35,10 @@ module Spree
 
     def purchase(amount, express_checkout, gateway_options={})
       # TODO: Write beautiful code.
+      Class.new do
+          def success?; true; end
+          def authorization; nil; end
+        end.new
     end
 
     def refund(payment, amount)
