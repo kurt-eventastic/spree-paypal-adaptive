@@ -8,6 +8,9 @@ module Spree
     preference :password, :string
     preference :signature, :string
 
+    attr_accessible :preferred_mode, :preferred_app_id, :preferred_username,
+                    :preferred_password, :preferred_signature
+
     def supports?(source)
       true
     end
