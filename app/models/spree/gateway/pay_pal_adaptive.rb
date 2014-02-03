@@ -18,7 +18,7 @@ module Spree
 
     def provider
       ::PayPal::SDK.configure(
-        mode: preferred_mode.present? ? preferred_mode : 'sandbox',
+        mode: preferred_mode.present? ? preferred_mode : 'live',
         username: preferred_username,
         password: preferred_password,
         signature: preferred_signature)
